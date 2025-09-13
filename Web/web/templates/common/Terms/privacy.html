@@ -1,52 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Privacy Policy & Terms</title>
-    <link rel="stylesheet" href="/static/assets/privacy.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KrishiSetu Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .main-container {
+            background-image: url('./assets/background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .privacy-card {
+            background-color: white;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            max-width: 1000px;
+        }
+    </style>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <div class="header-image"></div>
-            <div class="header-text">
-                <h1>Privacy Policy & Terms of Service</h1>
-                <p>Your data, your rights – Safe and Secure with KrishiSetu</p>
+<body class="flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-white p-4 shadow-sm">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="./assets/logo1.jpg" alt="KrishiSetu Logo" class="h-10 w-10 rounded-full">
+                <span class="text-lg font-bold text-gray-800">KrishiSetu</span>
             </div>
-        </header>
+            <div class="flex items-center space-x-4 text-gray-600 font-medium">
+                <a href="#" class="hover:text-green-600">Login for Sale</a>
+                <button class="focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
 
-        <section class="policies">
-            <h2>Privacy Policy</h2>
-            <div class="cards">
-                <div class="card animate"><h3>Data Usage</h3><p>Insights for better crop planning.</p></div>
-                <div class="card animate"><h3>Data Security</h3><p>Your data is safe and secure.</p></div>
-                <div class="card animate"><h3>Farmer Rights</h3><p>Access and support for farmers.</p></div>
-                <div class="card animate"><h3>Policy Access</h3><p>Transparent crop listings.</p></div>
+    <!-- Main Content -->
+    <main class="flex-grow flex flex-col items-center p-8 main-container">
+        <div class="w-full text-center py-20 px-4 bg-cover bg-center rounded-2xl transition-all duration-500" style="background-image: url('./assets/background\ img\ contact.jpg')">
+            <h1 class="text-5xl font-bold text-white mb-2">Privacy Policy & Terms of Service</h1>
+            <p class="text-white text-lg">Your data, your rights - Safe and Secure with KrishiSetu</p>
+        </div>
+
+        <div class="privacy-card p-12 mt-12 w-full">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Privacy Policy</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-gray-100 p-6 rounded-2xl flex items-start space-x-4 shadow-sm hover:bg-amber-100 cursor-pointer transition duration-300">
+                    <div class="bg-white rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 1.343 3 3v2a3 3 0 01-3 3h-2a3 3 0 01-3-3v-2c0-1.657 1.343-3 3-3z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 110-18 9 9 0 010 18z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 text-lg mb-1">Data Use</h3>
+                        <p class="text-sm text-gray-600">Device data (PM, NPK, EC) is collected, and is used and transferred for anonymized policy insights.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-2xl flex items-start space-x-4 shadow-sm hover:bg-amber-100 cursor-pointer transition duration-300">
+                    <div class="bg-white rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 1.343 3 3v2a3 3 0 01-3 3h-2a3 3 0 01-3-3v-2c0-1.657 1.343-3 3-3z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 110-18 9 9 0 010 18z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 text-lg mb-1">Data Use</h3>
+                        <p class="text-sm text-gray-600">Transaction and device data is linked to farmer listings, and is used to monitor crop listings.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-2xl flex items-start space-x-4 shadow-sm hover:bg-amber-100 cursor-pointer transition duration-300">
+                    <div class="bg-white rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c1.657 0 3 1.343 3 3v2a3 3 0 01-3 3h-2a3 3 0 01-3-3v-2c0-1.657 1.343-3 3-3z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 110-18 9 9 0 010 18z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 text-lg mb-1">Data Security</h3>
+                        <p class="text-sm text-gray-600">Data is stored securely. Access is limited to authorized personnel with strict privacy controls.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-2xl flex items-start space-x-4 shadow-sm hover:bg-amber-100 cursor-pointer transition duration-300">
+                    <div class="bg-white rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 11v-1a5 5 0 00-10 0v1h10z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11v-1a5 5 0 0110 0v1H7z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 text-lg mb-1">Farmer Rights</h3>
+                        <p class="text-sm text-gray-600">Crop prices are based on soil data and are safeguarded by anti-fraud measures and guaranteed delivery protocols.</p>
+                    </div>
+                </div>
             </div>
 
-            <h2>Terms & Conditions</h2>
-            <div class="cards">
-                <div class="card animate"><h3>Fair Pricing</h3><p>Support at best rates.</p></div>
-                <div class="card animate"><h3>Order Rules</h3><p>Verified market rates.</p></div>
-                <div class="card animate"><h3>Dispute Resolution</h3><p>Help with agricultural disputes.</p></div>
-                <div class="card animate"><h3>Legal Compliance</h3><p>Maintain trust with laws.</p></div>
-            </div>
-        </section>
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Terms & Conditions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-gray-100 p-6 rounded-2xl flex items-start space-x-4 shadow-sm hover:bg-amber-100 cursor-pointer transition duration-300">
+                    <div class="bg-white rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5-6a2 2 0 00-2-2H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 text-lg mb-1">Fair Pricing Policy</h3>
+                        <p class="text-sm text-gray-600">Crop prices are based on government and minimum support prices as per rules.</p>
+                    </div>
+                </div>
 
-        <footer>
-            <input type="checkbox" id="agree" />
-            <label for="agree">By using KrishiSetu, agree to our Privacy Policy & Terms of Service.</label>
-            <button id="acceptBtn">Accept & Continue</button>
-            <div class="links">
-                <a href="/" >Home</a>
-                <a href="/about/">About Us</a>
-                <a href="/contact/">Contact</a>
-                <a href="/faq/">FAQ</a>
-            </div>
-        </footer>
-    </div>
+                <div class="bg-gray-100 p-6 rounded-2xl flex items-start space-x-4 shadow-sm hover:bg-amber-100 cursor-pointer transition duration-300">
+                    <div class="bg-white rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5-6a2 2 0 00-2-2H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 text-lg mb-1">Order & Delivery Rules</h3>
+                        <p class="text-sm text-gray-600">Orders are governed by stable prices and verified market rates.</p>
+                    </div>
+                </div>
 
-    <script src="/static/assets/privacy.js"></script>
+                <div class="bg-gray-100 p-6 rounded-2xl flex items-start space-x-4 shadow-sm hover:bg-amber-100 cursor-pointer transition duration-300">
+                    <div class="bg-white rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c1.657 0 3 1.343 3 3v2a3 3 0 01-3 3h-2a3 3 0 01-3-3v-2c0-1.657 1.343-3 3-3z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 110-18 9 9 0 010 18z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 text-lg mb-1">Order & Delivery Rules</h3>
+                        <p class="text-sm text-gray-600">Secure payment gateways and strict verified terms are followed.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-100 p-6 rounded-2xl flex items-start space-x-4 shadow-sm hover:bg-amber-100 cursor-pointer transition duration-300">
+                    <div class="bg-white rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 11v-1a5 5 0 00-10 0v1h10z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11v-1a5 5 0 0110 0v1H7z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 text-lg mb-1">Govt/NGO Access</h3>
+                        <p class="text-sm text-gray-600">Government dashboards show aggregated data and remain confidential.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-2xl flex items-start space-x-4 shadow-sm hover:bg-amber-100 cursor-pointer transition duration-300">
+                    <div class="bg-white rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c1.657 0 3 1.343 3 3v2a3 3 0 01-3 3h-2a3 3 0 01-3-3v-2c0-1.657 1.343-3 3-3z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 110-18 9 9 0 010 18z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 text-lg mb-1">Dispute Resolution</h3>
+                        <p class="text-sm text-gray-600">Disputes are resolved directly using agricultural and IT laws.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-100 p-6 rounded-2xl flex items-start space-x-4 shadow-sm hover:bg-amber-100 cursor-pointer transition duration-300">
+                    <div class="bg-white rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 11v-1a5 5 0 00-10 0v1h10z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11v-1a5 5 0 0110 0v1H7z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 text-lg mb-1">Legal Compliance</h3>
+                        <p class="text-sm text-gray-600">Individual farmer identities remain confidential.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Agreement Section -->
+        <div class="w-full bg-green-700 text-white mt-12 py-8 px-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-start space-x-4">
+                <input type="checkbox" id="agree-checkbox" class="h-5 w-5 rounded-md text-green-600 focus:ring-green-500">
+                <label for="agree-checkbox" class="text-center md:text-left text-sm font-medium">
+                    By using KrishiSetu, agree our Privacy Policy &<br> & Terms of Service.
+                </label>
+            </div>
+            <button id="agree-btn" class="bg-white text-green-700 px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition duration-300 mt-4 md:mt-0">
+                Accept & Continue
+            </button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-gray-600 py-6 mt-auto">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 text-sm font-medium mb-4 md:mb-0">
+                <a href="#" class="hover:text-green-600">Home</a>
+                <a href="#" class="hover:text-green-600">About Us</a>
+                <a href="#" class="hover:text-green-600">Contact</a>
+                <a href="#" class="hover:text-green-600">FAQ</a>
+                <a href="#" class="hover:text-green-600">Privacy Policy</a>
+            </div>
+            <p class="text-sm text-gray-500 mb-4 md:mb-0">
+                Copyright © 2025 KrishiSetu
+            </p>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-500 hover:text-green-600 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 16h-2v-6h2v6zm5-1.5a2.5 2.5 0 01-5 0v-4.5a2.5 2.5 0 015 0v4.5zm2 1.5a.5.5 0 01-.5-.5v-4a.5.5 0 011 0v4a.5.5 0 01-.5.5z" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-green-600 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M22 6.5C22 4.01 19.99 2 17.5 2h-11C4.01 2 2 4.01 2 6.5v11C2 19.99 4.01 22 6.5 22h11c2.49 0 4.5-2.01 4.5-4.5v-11zM17.5 4h-11c-1.37 0-2.5 1.13-2.5 2.5v11c0 1.37 1.13 2.5 2.5 2.5h11c1.37 0 2.5-1.13 2.5-2.5v-11c0-1.37-1.13-2.5-2.5-2.5zM12 10.5c-1.37 0-2.5 1.13-2.5 2.5v1.5c0 1.37 1.13 2.5 2.5 2.5h1.5c1.37 0 2.5-1.13 2.5-2.5V13c0-1.37-1.13-2.5-2.5-2.5h-1.5z" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-green-600 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-4 9h3V8H8v3zm0 4h3v-3H8v3zm4 0h3v-3h-3v3zm-4-4h3v-3H8v3zm4-4h3V8h-3v3zm4 4h3v-3h-3v3z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const checkbox = document.getElementById('agree-checkbox');
+            const button = document.getElementById('agree-btn');
+            
+            button.disabled = true;
+            button.classList.add('opacity-50', 'cursor-not-allowed');
+
+            checkbox.addEventListener('change', () => {
+                if (checkbox.checked) {
+                    button.disabled = false;
+                    button.classList.remove('opacity-50', 'cursor-not-allowed');
+                } else {
+                    button.disabled = true;
+                    button.classList.add('opacity-50', 'cursor-not-allowed');
+                }
+            });
+
+            button.addEventListener('click', () => {
+                if (checkbox.checked) {
+                    alert('You have successfully agreed to the Privacy Policy & Terms of Service!');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

@@ -1,26 +1,25 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.querySelector('form');
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
 
-    const name = form.querySelector('input[placeholder="Name"]').value.trim();
-    const phone = form.querySelector('input[placeholder="Phone Number"]').value.trim();
-    const message = form.querySelector('textarea[placeholder="Message"]').value.trim();
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
 
-    if (!name) {
-      alert('Please enter your name.');
-      return;
-    }
-    if (!phone) {
-      alert('Please enter your phone number.');
-      return;
-    }
-    if (!message) {
-      alert('Please enter your message.');
-      return;
-    }
+  const name = document.getElementById('name').value;
+  const phone = document.getElementById('phone').value;
+  const message = document.getElementById('message').value;
+  const formMessage = document.getElementById('form-message');
 
-    alert('Thank you for contacting KrishiSetu! Your message has been sent.');
-    form.reset();
-  });
+  if (name && phone && message) {
+    formMessage.textContent = 'Thank you for your message! We will get back to you shortly.';
+    formMessage.classList.add('text-green-600');
+    formMessage.classList.remove('text-red-600');
+                
+                // You can add logic here to send the data to a server
+    console.log('Form submitted:', { name, phone, message });
+                
+                // Reset the form
+    this.reset();
+    } else {
+      formMessage.textContent = 'Please fill out all fields.';
+      formMessage.classList.add('text-red-600');
+      formMessage.classList.remove('text-green-600');
+    }
 });

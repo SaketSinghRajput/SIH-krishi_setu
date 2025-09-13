@@ -1,150 +1,18 @@
 body {
-    margin: 0;
-    font-family: 'Montserrat', Arial, sans-serif;
-    background: #fff;
-    color: #214110;
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8;
 }
-.contact-header-bg {
-    width: 100%;
-    min-height: 140px;
-    background: url('contact_background.jpg') center center/cover no-repeat;
-    border-radius: 20px 20px 0 0;
-    text-align: center;
-    padding-top: 36px;
-    padding-bottom: 18px;
+.main-container {
+     background-image: url('assets/contact_background.jpg');
+    background-size: cover;
+    background-position: center;
+
 }
 
-.header-content h1 {
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 9px;
-    color: #234010;
-}
-.header-content h2 {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #876842;
-    margin-top: 0;
-}
-.contact-main {
-    max-width: 5000px;
-    margin: -60px auto 0 auto;
-    padding: 0 12px 20px 12px;
-    display: flex;
-    gap: 30px;
-    background: #f8f8f6;
-    border-radius: 22px;
-    box-shadow: 0 5px 32px rgba(51,51,51,0.09);
-}
-.contact-form-box {
-    flex: 1 1 300px;
-    background: #fff;
-    border-radius: 16px;
-    margin-top: 60px;
-    padding: 36px 16px 18px 16px;
-    box-shadow: 0 3px 18px rgba(51,51,51,0.07);
-}
-.contact-form-title {
-    font-size: 1.12rem;
-    margin-bottom: 21px;
-    font-weight: 600;
-}
-.contact-input {
-    display: block;
-    width: 100%;
-    margin-bottom: 14px;
-    padding: 11px 12px;
-    font-size: 1rem;
-    border-radius: 7px;
-    border: 1.5px solid #d6d6d6;
-    background: #f8f8f6;
-    font-family: 'Montserrat', Arial, sans-serif;
-}
-.contact-message {
-    min-height: 50px;
-}
-.send-message-btn {
-    display: block;
-    margin: 0 auto;
-    background: #69ab38;
-    color: #fff;
-    font-size: 1.06rem;
-    padding: 10px 36px;
-    border-radius: 24px;
-    border: none;
-    font-weight: 700;
-    cursor: pointer;
-    margin-top: 18px;
-    box-shadow: 0 3px 14px rgba(51,51,51,0.07);
-    transition: background 0.3s;
-}
-.send-message-btn:hover {
-    background: #214110;
-    color: #fff;
-}
-.contact-info-box {
-    flex: 1 1 340px;
-    background: #fff;
-    border-radius: 16px;
-    margin-top: 60px;
-    padding: 32px 16px 20px 16px;
-    box-shadow: 0 3px 18px rgba(51,51,51,0.07);
-    display: flex;
-    flex-direction: column;
-    gap: 27px;
-}
-.info-title {
-    font-size: 1.07rem;
-    font-weight: 700;
-    margin-bottom: 13px;
-    color: #214110;
-}
-.info-row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 13px;
-    gap: 12px;
-}
-.info-icon {
-    font-size: 1.45rem;
-    color: #69ab38;
-}
-.info-data {
-    font-size: 1rem;
-    color: #876842;
-}
-.office-map img {
-    width: 100%;
-    min-height: 85px;
-    border-radius: 8px;
-    object-fit: cover;
-    background: #eee;
-    box-shadow: 0 2px 6px rgba(51,51,51,0.05);
-    border: 1px solid #eee;
-}
-.footer-links {
-    text-align: center;
-    background: #fff;
-    padding: 18px 0 0 0;
-    font-size: 1rem;
-    border-top: 1px solid #eee;
-    margin-top: 24px;
-}
-.footer-links a {
-    color: #214110;
-    text-decoration: none;
-    margin: 0 13px;
-    font-weight: 500;
-}
-.footer-links img {
-    vertical-align: middle;
-    margin-bottom: 2px;
-}
-.footer-copy {
-    text-align: center;
-    color: #876842;
-    font-size: 0.96rem;
-    opacity: 0.85;
-    margin-top: 8px;
-    margin-bottom: 9px;
+.contact-card {
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    max-width: 900px;
+            
 }
