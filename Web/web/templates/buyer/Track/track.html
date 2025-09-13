@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Track Your Order - KrishiSetu</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+    <link rel="stylesheet" href="/static/assets/track.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">🌱KrishiSetu</div>
+            <div class="login">◎Login for Sale≣ <i class="fas fa-bars"></i></div>
+        </header>
+
+        <h1>Track Your Order</h1>
+        <p>Real-time updates on your crop purchase</p>
+
+        <div class="order-card">
+            <h3>Order Details</h3>
+            <input type="text" id="orderInput" placeholder="Order ID or Phone Number">
+            <button onclick="trackOrder()">Track Order</button>
+
+            <div id="orderInfo" class="order-info hidden">
+                <p><strong>Order ID:</strong> #KS123456</p>
+                <p><strong>Crop:</strong> Wheat (100 kg)</p>
+                <p><strong>Farmer:</strong> Ramsh Kumar, Bihar</p>
+                <p><strong>Price:</strong> ₹4600</p>
+                <p><strong>Payment:</strong> Paid via UPI</p>
+                <p id="statusText"><strong>Status:</strong>Checking....</p>
+
+                <div class="tracker">
+                    <div class="step">
+                        <div class="icon"><i class="fas fa-box"></i></div>
+                        <div>Order Placed</div>
+                    </div>
+                    <div class="step">
+                        <div class="icon"><i class="fas fa-truck"></i></div>
+                        <div>Dispatched</div>
+                    </div>
+                    <div class="step">
+                        <div class="icon"><i class="fas fa-check-circle"></i></div>
+                        <div>Delivered</div>
+                    </div>
+                </div>
+
+                <div class="additional-info">
+                    <p>Estimated delivery date: Expected in 2 days😊</p>
+                    <button>Download Invoice</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 KrishiSetu</p>
+            <nav>
+                <a href="#">Home</a> |
+                <a href="#">Marketplace</a> |
+                <a href="#">FAQ</a> |
+                <a href="#">Contact</a>
+            </nav>
+        </footer>
+    </div>
+    <script src="/static/assets/track.js"></script>
+</body>
+</html>

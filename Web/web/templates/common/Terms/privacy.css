@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 60px;
+}
+
+.container {
+    max-width: 7000px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+header {
+    position: relative;
+}
+
+.header-image {
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
+    height: 120px;
+}
+
+.header-text {
+    text-align: center;
+    padding: 20px;
+}
+
+.header-text h1 {
+    margin: 0;
+    color: #4CAF50;
+}
+
+.header-text p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #6d4c41;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #4CAF50;
+    color: white;
+    border-radius: 0 0 15px 15px;
+}
+
+footer label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer button {
+    background: #fff;
+    color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+footer button:hover {
+    background: #f0f0f0;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.animate {
+    opacity: 50;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

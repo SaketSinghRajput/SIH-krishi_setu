@@ -1,0 +1,193 @@
+/* =========================
+   Body styling + Background animation
+   ========================= */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('leaf.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    /* Background floating animation */
+    animation: floatBackground 20s linear infinite;
+}
+
+/* Animation keyframes for floating background */
+@keyframes floatBackground {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100px 50px;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* =========================
+   Container styling
+   ========================= */
+.container {
+    max-width: 5000px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+/* =========================
+   Header styling
+   ========================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    color: #4CAF50;
+    font-size: 20px;
+}
+
+.login {
+    cursor: pointer;
+    color: #555;
+    font-size: 14px;
+}
+
+/* =========================
+   General text
+   ========================= */
+h1 {
+    margin-bottom: 5px;
+}
+
+p {
+    color: #666;
+    margin-top: 0;
+}
+
+/* =========================
+   Order card styling
+   ========================= */
+.order-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.order-card h3 {
+    margin-top: 0;
+}
+
+input[type="text"] {
+    width: calc(100% - 120px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* =========================
+   Order info styling
+   ========================= */
+.order-info {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* =========================
+   Tracker steps animation
+   ========================= */
+.tracker {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    padding: 10px;
+    border-bottom: 3px solid #ccc;
+    transition: all 0.3s ease;
+    opacity: 0.4;
+}
+
+/* Active step styling with pulse animation */
+.step.active {
+    border-bottom: 3px solid #4CAF50;
+    color: #4CAF50;
+    font-weight: bold;
+    opacity: 1;
+    animation: pulse 1s ease infinite alternate;
+}
+
+/* Keyframes for pulse animation */
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.icon {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+/* =========================
+   Additional info styling
+   ========================= */
+.additional-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.additional-info button {
+    background-color: #A0522D;
+}
+
+/* =========================
+   Footer styling
+   ========================= */
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #999;
+}
+
+footer nav a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 5px;
+}

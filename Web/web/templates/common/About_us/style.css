@@ -1,0 +1,25 @@
+body {
+font-family: 'Inter', sans-serif;
+background-color: #f7fafc;
+}
+
+.hero-section {
+background-image: url('assets/background\ image.jpg');
+background-size: cover;
+background-position: center;
+position: relative;
+z-index: 0;
+padding-top: 100px;
+padding-bottom: 200px;
+}
+
+.hero-section::after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.2);
+z-index: -1;
+}
