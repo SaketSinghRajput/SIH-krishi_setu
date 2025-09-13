@@ -1,5 +1,6 @@
 package com.krishisetu.ui.screens
 
+import androidx.compose.foundation.background // Added this import
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons // Added this import
 import androidx.compose.material.icons.filled.Lightbulb // Added this import if specific icon is used

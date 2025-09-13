@@ -1,5 +1,6 @@
 package com.krishisetu.ui.screens
 
+import androidx.compose.foundation.background // Added import
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Agriculture // Added import

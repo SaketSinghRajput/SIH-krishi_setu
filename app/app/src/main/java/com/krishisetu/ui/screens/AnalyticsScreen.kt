@@ -1,5 +1,6 @@
 package com.krishisetu.ui.screens
 
+import androidx.compose.foundation.background // Added this import
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons // Added this import if it wasn't there
 import androidx.compose.material.icons.filled.Lightbulb // Added for clarity, though Icons.Filled.Lightbulb should work with just the above

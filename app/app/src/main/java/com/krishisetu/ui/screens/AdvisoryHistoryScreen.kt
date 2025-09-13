@@ -1,5 +1,6 @@
 package com.krishisetu.ui.screens
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons // Added import
 import androidx.compose.material.icons.filled.History // Added import for specific icon
